@@ -6,6 +6,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mywebapp", "src\mywebapp\mywebapp.csproj", "{B8FDA0B5-E4C3-5E86-BECA-ACB033ACE2ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{242A5875-C30C-935C-A55C-91D237988152}"
+	ProjectSection(SolutionItems) = preProject
+		mywebapp.conf = mywebapp.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
