@@ -4,6 +4,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
+  config.vm.boot_timeout = 600
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "mywebapp"
     vb.cpus = 2
