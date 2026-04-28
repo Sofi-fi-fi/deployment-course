@@ -10,5 +10,5 @@ Vagrant.configure("2") do |config|
     vb.memory = 2048
   end
 
-  # config.vm.provision "shell", path: "scripts/install.sh", privileged: true
+  config.vm.provision "shell", path: "scripts/install.sh", privileged: true
 end
