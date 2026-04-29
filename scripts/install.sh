@@ -16,6 +16,8 @@ apt-get install -y -qq \
     -o Dpkg::Options::="--force-confold" \
     postgresql nginx jq dotnet-sdk-10.0
 
+sed -i 's/\r$//' "$REPO_DIR/scripts/migrate.sh"
+
 echo "==> [2/9] Creating users..."
 
 if ! id -u student &>/dev/null; then
